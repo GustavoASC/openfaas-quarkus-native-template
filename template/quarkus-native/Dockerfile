@@ -15,7 +15,7 @@ ADD function/pom.xml /tmp/tmpapp/pom.xml
 RUN ./mvnw -f /tmp/tmpapp/pom.xml dependency:resolve
 # build the function
 ADD function /app/function
-RUN ./mvnw -f /app/function/pom.xml package -Pnative
+RUN ./mvnw -f /app/function/pom.xml package -DskipTests -Pnative 
 
 
 # use the openfaas image to get the watchdog

@@ -2,7 +2,7 @@
 FROM ghcr.io/graalvm/graalvm-ce:ol7-java11-21.3.3 as build-aot
 RUN gu install native-image
 # Set working dir
-RUN mkdir /app && mkdir -p /tmp/tmpapp
+RUN mkdir -p /tmp/tmpapp
 WORKDIR /app
 
 # Add maven wrapper

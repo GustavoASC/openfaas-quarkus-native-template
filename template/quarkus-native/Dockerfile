@@ -43,7 +43,7 @@ USER app
 ENV cgi_headers="true"
 ENV fprocess="function"
 ENV mode="http"
-ENV upstream_url="http://127.0.0.1:8000"
+ENV upstream_url="http://localhost:8000"
 
 ENV exec_timeout="20s"
 ENV write_timeout="25s"

@@ -41,7 +41,7 @@ RUN ln -s /home/app/function /usr/bin/function
 USER app
 
 ENV cgi_headers="true"
-ENV fprocess="function"
+ENV fprocess="function -Xmx100m"
 ENV mode="http"
 ENV upstream_url="http://localhost:8000"
 
